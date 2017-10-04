@@ -48,24 +48,132 @@ table {
 }
 
 /*
+		Grid
+*/
+
+*,
+*:before,
+*:after{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 900px;
+	box-sizing: border-box;
+	margin:auto; /* Center the container */
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	width: 16.66%;
+	/*-- Gutter --*/
+	padding-right: 12px;
+}
+
+.col-1{width: 16.66%;}
+.col-2{width: 33.33%;}
+.col-3{width: 50%;}
+.col-4{width: 66.664%;}
+.col-5{width: 83.33%;}
+.col-6{width: 100%;}
+
+/*
+		Clearfix
+	  Used for the row element to keep columns inside it to overflow to other rows.
+*/
+
+.row:before,
+.row:after{
+	content: ""; /*  */
+	display: table;
+	clear: both;
+}
+
+/*
     Styles
 */
 
-nav {
-  background: #028DD2;
-}
 
-main .name {
+.name,
+.social {
+	color: #FFF;
   background: #0AA1DA;
+	padding: 30px 70px;
 }
 
-main .intro {
+.intro {
   background: #58636A;
+	padding: 30px 70px;
 }
 
-footer .social {
-  background: #0AA1DA;
+.core {
+	display: block;
+	background-color: white;
+	height: 700px;
+	padding: 30px 70px;
 }
-footer .contact {
+
+.contact {
   background: #0787D1;
+}
+
+/*
+		Typography
+*/
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.17em;}
+h4 {font-size: 1em;}
+h5 {font-size: 0.83em;}
+h6 {font-size: 0.67em;}
+
+/*
+		Heading
+*/
+html {
+	background: black;
+}
+
+
+header {
+	height: 50px;
+	background: #028DD2;
+}
+
+nav {
+	position: relative;
+	top: 50%;
+	padding: 0 70px;
+}
+
+nav a {
+	margin-right: 13px;
+	color: #4FC5FF;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+
+nav a:hover,
+nav a:active {
+	color: #FFF;
+	border-bottom: 1.5px solid #fff;
+}
+
+/*
+		Image
+*/
+
+img {
+	display: block;
+	height: 150px;
+	border-radius: 50%;
+	float: right;
 }
