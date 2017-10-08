@@ -6,6 +6,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <script src="https://use.fontawesome.com/505702171c.js"></script>
 
     <title>David Brown</title>
   </head>
@@ -23,7 +24,7 @@
     <main class="container">
       <!-- Heading -->
       <section class="name row">
-        <div class="col-4">
+        <div class="col-6">
           <h1>David Brown</h1>
           <h3>Architect</h3>
         </div>
@@ -31,7 +32,6 @@
         <img src="./assets/images/morty01-crop.png" alt="morty image">
 
       </section>
-
       <section class="intro row">
         <p>
           Donec it elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.
@@ -41,9 +41,9 @@
       </section>
 
       <section class="core row">
-        <section class="col-3">
+        <section class="col-4">
           <h3>Personal</h3>
-          <table>
+          <table class="personal">
             <tr>
               <td>Name</td>
               <td>David Brown</td>
@@ -71,51 +71,191 @@
           </table>
           <br><br>
           <h3>Software</h3>
-          <table>
+          <table class="software">
             <tr>
               <td>InDesign CC</td>
-              <td></td>
+              <td>
+                <div class="progress-bar horizontal">
+                  <div class="progress-track">
+                    <div class="progress-fill progress-100">
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Illustrator CC</td>
-              <td></td>
+              <td>
+                <div class="progress-bar horizontal">
+                  <div class="progress-track">
+                    <div class="progress-fill progress-80">
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Photoshop CC</td>
-              <td></td>
+              <td>
+                <div class="progress-bar horizontal">
+                  <div class="progress-track">
+                    <div class="progress-fill progress-60">
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Sketch 3</td>
-              <td></td>
+              <td>
+                <div class="progress-bar horizontal">
+                  <div class="progress-track">
+                    <div class="progress-fill progress-40">
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>HTML5</td>
-              <td></td>
+              <td>
+                <div class="progress-bar horizontal">
+                  <div class="progress-track">
+                    <div class="progress-fill progress-30">
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>CSS</td>
-              <td></td>
+              <td>
+                <div class="progress-bar horizontal">
+                  <div class="progress-track">
+                    <div class="progress-fill progress-20">
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
           </table>
-            <br><br>
+          <br><br>
           <h3>Hobbies</h3>
-          <ul>
-            <li>Outdoors</li>
-            <li>Traveling</li>
-            <li>Basketball</li>
-            <li>Writing</li>
-            <li>Socializing</li>
-            <li>Gaming</li>
-          </ul>
-
+          <div id="hobbies">
+            <ul>
+              <li>
+                <div class="circle">
+                  <i class="fa fa-bicycle fa-3x" aria-hidden="true"></i>
+                </div>
+                <p>Outdoor</p>
+              </li>
+              <li>
+                <div class="circle">
+                  <i class="fa fa-plane fa-3x" aria-hidden="true"></i>
+                </div>
+                <p>Travel</p>
+              </li>
+              <li>
+                <div class="circle">
+                  <i class="fa fa-dribbble fa-3x" aria-hidden="true"></i>
+                </div>
+                <p>Basketball</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <div class="circle">
+                  <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
+                </div>
+                <p>Writing</p>
+              </li>
+              <li>
+                <div class="circle">
+                  <i class="fa fa-coffee fa-3x" aria-hidden="true"></i>
+                </div>
+                <p>Socializing</p>
+              </li>
+              <li>
+                <div class="circle">
+                  <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i>
+                </div>
+                <p>Gaming</p>
+              </li>
+            </ul>
+          </div>
         </section>
 
-        <section class="col-3">
-          <ul>
-            <li>Work</li>
-            <li>Professional Skills</li>
-            <li>Education</li>
+        <section class="col-6">
+          <h3>Work</h3>
+          <ul class="timeline">
+            <li>
+              <div class="timeline-content">
+                <h4>Design Director @ Big Design, New York <span>2015</span></h4>
+                <p>
+                  Nullam id dolor id nibh vehicula ud it elit. Aenean lacinia
+                  bibendum nulla sed consectetur. Aenean eu leo quam.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h4>Design Director @ Design Company, Brooklyn <span>2012</span></h4>
+                <p>
+                  Nullam id dolor id nibh vehicula ud it elit. Aenean lacinia
+                  bibendum nulla sed consectetur. Aenean eu leo quam.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h4>Design Director @ Brand New, Paris <span>2008</span></h4>
+                <p>
+                  Nullam id dolor id nibh vehicula ud it elit. Aenean lacinia
+                  bibendum nulla sed consectetur. Aenean eu leo quam.
+                </p>
+              </div>
+            </li>
           </ul>
+          <br><br>
+          <h3>Professional Skills</h3>
+          <div class="progress-cicle">
+            <div class="progress_number">25%</div>
+          </div>
+          <ul id="skills">
+            <li>
+
+                Design
+            </li>
+            <li>Concept</li>
+            <li>Art Direction</li>
+            <li>Teamwork</li>
+            <li>Management</li>
+          </ul>
+          <br><br>
+          <h3>Education</h3>
+
+          <ul class="timeline">
+            <li>
+              <div class="timeline-content">
+                <h4>MA Graphics @ Royal College of Art, London <span>2007</span></h4>
+                <p>
+                  Nullam id dolor id nibh vehicula ud it elit. Aenean lacinia
+                  bibendum nulla sed consectetur. Aenean eu leo quam.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h4>BA(hons) Graphics @ Central Saint Martins, London <span>2003</span></h4>
+                <p>
+                  Nullam id dolor id nibh vehicula ud it elit. Aenean lacinia
+                  bibendum nulla sed consectetur. Aenean eu leo quam.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+
         </section>
       </section>
     </main>
@@ -125,18 +265,13 @@
       <section class="social row">
         <ul class="">
           <li><a href="">Behance</a></li>
-        </ul>
-        <ul class="">
           <li><a href="">LinkedIn</a></li>
-        </ul>
-        <ul class="">
           <li><a href="">Twitter</a></li>
         </ul>
       </section>
 
       <section class="contact">
-        <p>Flat 2, 10 Broadway, New York, NY 12345. Call +1 (212) 123-4567. Email: davidbrown@gmail.com</p>
-        <p>www.davidbrowndesigns.com</p>
+        <p>Flat 2, 10 Broadway, New York, NY 12345. Call +1 (212) 123-4567. Email: davidbrown@gmail.com <span class="float-right">www.davidbrowndesigns.com</span></p>
       </section>
     </footer>
   </body>
