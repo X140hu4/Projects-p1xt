@@ -16,14 +16,14 @@
       <!-- Navigation bar -->
       <nav>
         <a href="">HELLO</a>
-        <a href="">RESUME</a>
+        <a href="" class="active">RESUME</a>
         <a href="">PORTFOLIO</a>
       </nav>
     </header>
     <!-- Main section -->
     <main class="container">
       <!-- Heading -->
-      <section class="name row">
+      <section id="name" class="row">
         <div class="col-6">
           <h1>David Brown</h1>
           <h3>Architect</h3>
@@ -32,7 +32,7 @@
         <img src="./assets/images/morty01-crop.png" alt="morty image">
 
       </section>
-      <section class="intro row">
+      <section id="intro" class="row">
         <p>
           Donec it elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.
           Donec sed odio dui. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel
@@ -40,10 +40,10 @@
         </p>
       </section>
 
-      <section class="core row">
+      <section id="core" class="row">
         <section class="col-4">
           <h3>Personal</h3>
-          <table class="personal">
+          <table id="personal">
             <tr>
               <td>Name</td>
               <td>David Brown</td>
@@ -71,7 +71,7 @@
           </table>
           <br><br>
           <h3>Software</h3>
-          <table class="software">
+          <table id="software">
             <tr>
               <td>InDesign CC</td>
               <td>
@@ -218,18 +218,28 @@
           </ul>
           <br><br>
           <h3>Professional Skills</h3>
-          <div class="progress-cicle">
-            <div class="progress_number">25%</div>
-          </div>
           <ul id="skills">
             <li>
-
-                Design
+              <div class="progress-circle progress-100">
+                <div class="progress-text">Design</div>
+              </div>
             </li>
-            <li>Concept</li>
-            <li>Art Direction</li>
-            <li>Teamwork</li>
-            <li>Management</li>
+            <li>
+              <div class="progress-circle progress-90">
+                <div class="progress-text">Concept</li>
+              </div>
+            <li>
+              <div class="progress-circle progress-80">
+                <div class="progress-text">Art Direction</li>
+              </div>
+            <li>
+              <div class="progress-circle progress-60">
+                <div class="progress-text">Teamwork</li>
+              </div>
+            <li>
+              <div class="progress-circle progress-70">
+                <div class="progress-text">Management</li>
+              </div>
           </ul>
           <br><br>
           <h3>Education</h3>
@@ -262,16 +272,37 @@
 
     <!-- footer bar -->
     <footer class="container">
-      <section class="social row">
-        <ul class="">
-          <li><a href="">Behance</a></li>
-          <li><a href="">LinkedIn</a></li>
-          <li><a href="">Twitter</a></li>
+      <section id="social" class="row">
+        <ul>
+          <li>
+            <div class="circle">
+              <a href="">
+                <i class="fa fa-behance fa-2x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p>www.behance.com\DavidBrown</p>
+          </li>
+          <li>
+            <div class="circle">
+              <a href="">
+                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p>www.linkedin\David.Brown</p>
+          </li>
+          <li>
+            <div class="circle">
+              <a href="">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p>www.twitter.com\David.Brown</p>
+          </li>
         </ul>
       </section>
 
-      <section class="contact">
-        <p>Flat 2, 10 Broadway, New York, NY 12345. Call +1 (212) 123-4567. Email: davidbrown@gmail.com <span class="float-right">www.davidbrowndesigns.com</span></p>
+      <section id="contact">
+        <p>Flat 2, 10 Broadway, New York, NY 12345. Call +1 (212) 123-4567. Email: davidbrown@gmail.com <span class="float-right"><a href="">www.davidbrowndesigns.com</a></span></p>
       </section>
     </footer>
   </body>

@@ -102,25 +102,63 @@ table {
     Styles
 */
 
+/* Top */
+header {
+	height: 50px;
+	background: #028DD2;
+}
 
-.name,
-.social {
+nav {
+	position: relative;
+	top: 50%;
+	padding: 0 70px;
+}
+nav a {
+	margin-right: 13px;
+	color: #4FC5FF;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+nav a:hover,
+nav a:active {
+	color: #FFF;
+	border-bottom: 1.5px solid #fff;
+	/* added position relative and z-index to show above following div */
+	position: relative;
+	z-index: 4;
+}
+nav a.active {
+	color: #FFF;
+	border-bottom: 1.5px solid #fff;
+	/* added position relative and z-index to show above following div */
+	position: relative;
+	z-index: 4;
+}
+
+
+#name,
+#social {
 	color: #FFF;
   background: #0AA1DA;
 	padding: 30px 70px;
 }
 
-.name {
+#name {
 	box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
 	position: relative;
 	z-index: 3;
 }
-
-.name div {
+#name div {
 	margin-top: 49.8px;
 }
+#name img {
+	display: block;
+	height: 150px;
+	border-radius: 50%;
+	float: right;
+}
 
-.intro {
+#intro {
 	font-weight: 300;
 	color: #FFF;
   background: #58636A;
@@ -129,61 +167,41 @@ table {
 	position: relative;
 }
 
+/*		Core     */
 
-.contact {
-  background: #0787D1;
-}
-
-/*
-		Core body
-*/
-
-.core {
+#core {
 	display: block;
 	background-color: white;
-	height: 900px;
+	height: 850px;
 	padding: 30px 70px;
 }
 
-.core h3 {
+#core h3 {
 	color:#0AA1DA;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
 
-/*
-.core .col-3 {
-	border: 1px solid red;
-	box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.8);
-	position: relative;
-	z-index: 20;
-}
-*/
-
-/*
-		Tables
-*/
-
 table {
 	width: 80%;
 }
 
-.personal tr {
+#personal tr {
 	border-bottom: solid 1px #BFBFBF;
 }
 
-.personal td {
+#personal td {
 	padding-top: 10px;
 	padding-bottom: 15px;
   vertical-align: top;
 }
 
-.personal td:nth-child(1) {
+#personal td:nth-child(1) {
 	font-weight: bold;
 	width: 120px;
 }
 
-.software td:nth-child(1) {
+#software td:nth-child(1) {
 	width: 120px;
 	padding: 5px 0;
 }
@@ -215,8 +233,8 @@ table {
 #hobbies ul li:last-child{
 	margin-right: 0;
 }
-
-.circle {
+/* circle for the hobbies' elements */
+#hobbies .circle {
 	border-radius: 50%;
 	height: 75px;
 	width: 75px;
@@ -226,10 +244,95 @@ table {
 	justify-content: center;
 }
 
+/* Bottom */
+#social {
+	text-align: center;
+}
+
+#social ul li {
+	display: inline-block;
+}
+/* circle for social's elements */
+#social .circle {
+	margin: auto;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background: #0787D1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#social a {
+ 	color: #FFF;
+	text-decoration: none;
+}
+#social p {
+	margin-top: 15px;
+	font-size: 0.8rem;
+}
+#social li {
+	margin-right: 80px;
+}
+#social li:last-child {
+	margin-right: 0;
+}
+
+#contact {
+  background: #0787D1;
+	padding: 10px 70px;
+	color: #fff;
+	font-size: 0.7em;
+}
+#contact a {
+ 	color: #FFF;
+	text-decoration: none;
+}
+#contact li {
+	display: inline;
+}
+
+#contact .float-right {
+	float: right;
+}
+
+
+/*
+		Tables
+*/
+
+
 #skills li {
 	display: inline;
 }
 
+/*
+		Typography
+*/
+html {
+	font-family: 'Open Sans', sans-serif;
+	background: #e7e7e7;
+}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.17em;}
+h4 {font-size: 1em;}
+h5 {font-size: 0.83em;}
+h6 {font-size: 0.67em;}
+
+/*
+	Links
+*/
+
+
+
+/*
+		Graphic elements:
+		- Horizontal progress bar
+		- Vertical timeline
+		- Progress circle
+*/
 
 /*
 		Horizontal progress bar
@@ -337,112 +440,83 @@ table {
 */
 
 .progress-circle {
-  position: relative;
-  display: inline-block;
-  margin: 1rem;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-/*
-.progress-circle:before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: white;
-  }
-.progress-circle:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #63B8FF;
-}
-*/
-.progress_number {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  line-height: 1;
-  margin-top: -0.75rem;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #777;
-}
-
-
-/*
-		Typography
-*/
-html {
-	font-family: 'Open Sans', sans-serif;
-	background: #e7e7e7;
-}
-
-h1 {font-size: 2em;}
-h2 {font-size: 1.5em;}
-h3 {font-size: 1.17em;}
-h4 {font-size: 1em;}
-h5 {font-size: 0.83em;}
-h6 {font-size: 0.67em;}
-
-/*
-		Heading
-*/
-
-
-header {
-	height: 50px;
-	background: #028DD2;
-}
-
-nav {
 	position: relative;
-	top: 50%;
-	padding: 0 70px;
-}
-
-nav a {
-	margin-right: 13px;
-	color: #4FC5FF;
-	text-decoration: none;
-	padding-bottom: 7px;
-}
-
-nav a:hover,
-nav a:active {
-	color: #FFF;
-	border-bottom: 1.5px solid #fff;
-}
-
-.social li {
-	display: inline;
-}
-
-.contact {
-	height: 20px;
-	padding: 0 70px;
-	color: #fff;
-	font-size: 0.7em;
-}
-
-.contact .float-right {
-	float: right;
-}
-
-/*
-		Image
-*/
-
-.name img {
-	display: block;
-	height: 150px;
+	display: inline-block;
+	margin: 5px;
+	width: 95px;
+	height: 95px;
 	border-radius: 50%;
-	float: right;
+	background-color: #ddd;
+}
+.progress-circle:before {
+	content: '';
+	position: absolute;
+	top: 11.875px;
+	left: 11.875px;
+	width: 71.25px;
+	height: 71.25px;
+  border-radius: 50%;
+	background-color: #fff;
+}
+.progress-circle:after {
+	content: '';
+	display: inline-block;
+	top: -11.875px;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #63b8ff;
+}
+.progress-text {
+	position: absolute; /* progress circle is shifted down if not absolute */
+	top: 50%;
+	width: 100%;
+	margin-top: -0.5rem;
+	text-align: center;
+	font-size: 0.65rem;
+}
+/* Progress circle in 10 sections */
+.progress-circle.progress-0:after {
+	background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent),
+										linear-gradient(270deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-10:after {
+	background-image: linear-gradient(54deg, #ebebeb 50%, transparent 50%, transparent),
+										linear-gradient(270deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-20:after {
+	background-image: linear-gradient(18deg, #ebebeb 50%, transparent 50%, transparent),
+										linear-gradient(270deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-30:after {
+	background-image: linear-gradient(-18deg, #ebebeb 50%, transparent 50%, transparent),
+										linear-gradient(270deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-40:after {
+	background-image: linear-gradient(-54deg, #ebebeb 50%, transparent 50%, transparent),
+										linear-gradient(270deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-50:after {
+	background-image: linear-gradient(-90deg, #63b8ff 50%, transparent 50%, transparent),
+										linear-gradient(270deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-60:after {
+	background-image: linear-gradient(90deg, #63b8ff 50%, transparent 50%, transparent),
+										linear-gradient(234deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-70:after {
+	background-image: linear-gradient(90deg, #63b8ff 50%, transparent 50%, transparent),
+										linear-gradient(198deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-80:after {
+	background-image: linear-gradient(90deg, #63b8ff 50%, transparent 50%, transparent),
+										linear-gradient(162deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-90:after {
+	background-image: linear-gradient(90deg, #63b8ff 50%, transparent 50%, transparent),
+										linear-gradient(126deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
+}
+.progress-circle.progress-100:after {
+	background-image: linear-gradient(90deg, #63b8ff 50%, transparent 50%, transparent),
+										linear-gradient(90deg, #ebebeb 50%, #63b8ff 50%, #63b8ff);
 }
