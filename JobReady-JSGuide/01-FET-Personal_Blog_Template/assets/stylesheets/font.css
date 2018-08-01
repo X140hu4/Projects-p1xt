@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Hind Regular';
+    src: url('../fonts/Hind/Hind-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monserrat Bold';
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monserrat Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}

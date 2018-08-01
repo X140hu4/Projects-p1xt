@@ -1,18 +1,106 @@
 body {
     background-color: #f9f9fb;
     color: #363636;
-    margin-top: 238px;
+    margin-top: 150px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.error-message-code {
-    font-size: 110px;
+.err-msg-top {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.err-msg-top__code {
+    font-size: 70vw;
+    font-family: 'Monserrat Bold';
+    position: absolute;
+}
+
+.err-msg-top__desc {
+    width: 550px;
+    height: 20px;
+    line-height: 23px;
+    background-color:  #f9f9fb;
+    font-size: 1.4em;
+    font-family: 'Hind Regular';
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 28%;
+}
+
+.search-form {
+    background-color: black;
+    width: 500px;
+    height: 30px;
+    margin-top: 40px;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.search-form input {
+    border-width: 0;
+    border: 1px solid #ccc;
+}
+
+.search-form input[type="text"] {
+    padding-left: 20px;
+    flex: 4;
+}
+
+.search-form input[type="submit"] {
+    background-color: #363636;
+    color: #fff;
+    flex: 1;
+}
+
+.err-msg-bot {
+    font-family: 'Monserrat Bold';
+    position: relative;
+    height: 200px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.err-msg-bot--big {
+    font-size: 2em;
+}
+
+.err-msg-bot--grey {
+    color:#acacad;
+    margin-top: 5px;
+}
+
+.home-img {
+    position: relative;
+    top: 3px;
+}
+
+.err-msg-bot a {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Monserrat Regular';
+    text-decoration: none;
+    color: #5d5d5d;
 }
