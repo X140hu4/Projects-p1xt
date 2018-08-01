@@ -15,7 +15,6 @@ body {
 .err-msg-top {
     position: relative;
     height: 200px;
-    width: 100%;
     
     display: flex;
     justify-content: center;
@@ -24,13 +23,13 @@ body {
 }
 
 .err-msg-top__code {
-    font-size: 70vw;
+    font-size: 15em;
     font-family: 'Monserrat Bold';
     position: absolute;
 }
 
 .err-msg-top__desc {
-    width: 550px;
+    width: 500px;
     height: 20px;
     line-height: 23px;
     background-color:  #f9f9fb;
@@ -103,4 +102,10 @@ body {
     font-family: 'Monserrat Regular';
     text-decoration: none;
     color: #5d5d5d;
+}
+
+@media only screen and (max-width: 415px) {
+    .err-msg-top__code {
+        font-size: 10em;
+    }
 }
