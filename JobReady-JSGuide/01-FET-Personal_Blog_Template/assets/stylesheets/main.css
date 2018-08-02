@@ -44,7 +44,6 @@ body {
 }
 
 .search-form {
-    background-color: black;
     width: 500px;
     height: 30px;
     margin-top: 40px;
@@ -106,6 +105,19 @@ body {
 
 @media only screen and (max-width: 415px) {
     .err-msg-top__code {
-        font-size: 10em;
+        font-size: 9em;
+    }
+
+    .err-msg-top__desc {
+        height: 14px;
+        line-height: 17px;
+        font-size: 0.8em;
+        letter-spacing: 4px;
+        bottom: 36.5%;
+    }
+
+    .search-form {
+        width: 300px;
+        margin-top: 0;
     }
 }
