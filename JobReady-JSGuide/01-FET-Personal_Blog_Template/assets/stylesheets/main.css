@@ -120,4 +120,8 @@ body {
         width: 300px;
         margin-top: 0;
     }
+
+    .search-form input[type="submit"] {
+        -webkit-appearance: none;
+    }
 }
