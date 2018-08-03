@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Hind Light';
+    src: url('../fonts/Hind/Hind-Light.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Monserrat Bold';
     src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
 }
